@@ -8,6 +8,8 @@ weather_df = pd.read_csv("./data/weather-annarbor.csv", parse_dates = ['DATE'], 
 
 app = Dash(__name__)
 
+server = app.server
+
 #specify layout of the dashboard
 app.layout = html.Div([
     html.H1(children = ["Bicycle traffic dashboard"]),
